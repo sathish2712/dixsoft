@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/sample/public/CSS/retriveProduct.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text">
+        <h2>Search your products here</h2>
+        <a href="/newProduct.html">Add new product</a>   
+    </div>
+    
+    <div class="wrap">
+        <form class="search-box">
+            <input id="search-text" type="text" placeholder="Search Products"><br><br>
+            <input type ="button" id="button" value="search">
+        </form>
+        <p id="error"></p><br>
+        
+        <table id="table-content" class="table" border ="1">
+            <thead>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product cost</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <script src="/sample/public/CSS/retriveProduct.css"></script> -->
+    <script src="/sample/public/JS/get.js"></script>
+</body>
+</html>
