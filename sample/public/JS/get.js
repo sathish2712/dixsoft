@@ -9,12 +9,15 @@ buttonEvent.addEventListener('click' , (e)=> {
     e.preventDefault()
     const tempData = searchText.value
     errorMsg.textContent = "Loading..."
+    //If input value is null then throw error
     if(tempData.length == 0){
         errorMsg.textContent = "Provide product name"
     }
     else{
+        // fetching json data from the API 
         fetch('https://vpsapg.dixsoft.online/product/get?prod_name=' + tempData).then((response) => {
             response.json().then((data) => {
+                //If searched product isnt found then throw error (success == 2) from json data
                 if (data.success == 2) {
                     errorMsg.textContent = data.message
                     table.style.display = 'none'
@@ -26,6 +29,7 @@ buttonEvent.addEventListener('click' , (e)=> {
                     while(bodyContent.firstChild){
                         bodyContent.removeChild(bodyContent.firstChild)
                     }
+                    //append table row value form json data
                     data.data.forEach((row) => {
                         const tr = document.createElement('tr')
                         for(let key in row){

@@ -4,11 +4,10 @@
 .search-box {
     position: relative;
     left : 50px;
-    top: 140px;
+    top: 40px;
     background: white;
     width: 240px;
     position: absolute;
-    /* margin: 90px; */
 }
 #table-content {
     background: 00B4CC;
