@@ -62,19 +62,19 @@
 }
 .pure-form {
     align-content: center;
-    top: 50px;
+    top: 150px;
     text-align: center;
     flex-direction: column;
 }
 a{
-    text-align: center;
+    text-align: justify;
     font-family: arial;
-    max-width: 50px;
-    margin: 300 auto;
-    padding: 3px 16px;
+    max-width: 150px;
+    margin: auto auto;
+    padding: 23px 16px;
     font-weight: bold;
     position: relative;
-    left : 550px;
+    left : 670px;
     top: 0px;
     color: #888888;
     text-decoration: none;

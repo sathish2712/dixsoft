@@ -2,23 +2,23 @@
 
 
 .search-box {
-    position: relative;
-    left : 50px;
-    top: 40px;
+    position: absolute;
+    left : 600px;
+    top: 240px;
     background: white;
     width: 240px;
     position: absolute;
 }
 #table-content {
-    background: 00B4CC;
+    background: #00B4CC;
     width: 440px;
-    margin: 20px auto;
+    margin: 125px 50px 75px 550px;
+    align-content: inherit;
     border: 0;
     border-bottom: 1px solid #fff;
     font-size: 16px;
     padding: 5px;
-    background: #00B4CC;
-    
+    background:whitesmoke;
 }
 #search-text {
     width: 340px;
@@ -44,7 +44,7 @@
     
 }
 #error {
-    top: 670px;
+    top: 1670px;
     margin: 30px auto;
     font-weight: bold;
     width: 250px;;
@@ -55,13 +55,13 @@
     text-align: center;
     color: #00B4CC;
 }
-.wrap{
+/* .wrap{
     width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+  } */
   .text {
     color: #333333;
     font-family: arial;
